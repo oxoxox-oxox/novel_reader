@@ -1,50 +1,36 @@
-# Novel Reader (Core Skeleton)
+# Novel Reader
 
-This is a tool for reading local novels on desktop. It supports multiple formats (txt, epub, markdown) and provides features like library management, reading progress tracking, bookmarks, and customizable themes.
+English | [中文](README.zh-CN.md)
 
+A local desktop novel reader with a library view, chapter navigation, and reading progress restore. Supports txt, epub, and markdown.
 
 ## Features
 
-- **Multi-format Support**: Read novels in txt, epub, and markdown formats.
-- **Library Management**: Import and organize your novel collection with metadata and cover images.
-- **Reading Progress**: Automatically save your last reading position and track progress.
+- Local library scanning and folder selection
+- Chapter list with one-click jump
+- Remember last read chapter per book
+- Formats: txt / epub / markdown
 
-## Technology Stack
+## Use the Release
 
-- **Desktop Framework**: Tauri
-- **Frontend**: Vue 3 + Vite
-- **State Management**: Pinia
-- **Routing**: Vue Router
+If you already have the release EXE, just run it. The app works offline and reads from local folders.
 
-## Installation
+## Development
 
-1. Clone the repository:
+```bash
+npm install
+npm run tauri:dev
+```
 
-   ```bash
-   git clone "https://github.com/oxoxox-oxox/novel_reader.git"
-   ```
+## Build
 
-2. Navigate to the project directory:
+```bash
+npm run tauri:build
+```
 
-   ```bash
-    cd novel_reader
-   ```
+Output is under:
 
-3. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Run the development server:
-
-    ```bash
-   npm run dev
-    ```
-
-    Or if you want to build the application:
-
-    ```bash
-    npm run tauri:dev
-    ```
+```
+src-tauri/target/release/
+```
 
