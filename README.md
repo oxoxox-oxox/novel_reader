@@ -1,19 +1,50 @@
 # Novel Reader (Core Skeleton)
 
-Local novel reader desktop app using Tauri + Vue 3. This is a core skeleton with a library view and a reader view, plus placeholder services for import/progress.
+This is a tool for reading local novels on desktop. It supports multiple formats (txt, epub, markdown) and provides features like library management, reading progress tracking, bookmarks, and customizable themes.
 
-## Scripts
-- `npm run dev` - start the Vue dev server
-- `npm run build` - build the frontend
-- `npm run preview` - preview the frontend build
-- `npm run tauri:dev` - run the desktop app (Tauri dev)
-- `npm run tauri:build` - build the desktop app (Tauri build)
 
-## Desktop Prerequisites (Windows)
-- Rust toolchain with MSVC target
-- Visual Studio Build Tools: "Desktop development with C++"
-- WebView2 Runtime
+## Features
 
-## Notes
-- Tauri scaffolding is included in `src-tauri/`.
-- Replace mock services with real file system and database logic.
+- **Multi-format Support**: Read novels in txt, epub, and markdown formats.
+- **Library Management**: Import and organize your novel collection with metadata and cover images.
+- **Reading Progress**: Automatically save your last reading position and track progress.
+
+## Technology Stack
+
+- **Desktop Framework**: Tauri
+- **Frontend**: Vue 3 + Vite
+- **State Management**: Pinia
+- **Routing**: Vue Router
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone "https://github.com/oxoxox-oxox/novel_reader.git"
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+    cd novel_reader
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Run the development server:
+
+    ```bash
+   npm run dev
+    ```
+
+    Or if you want to build the application:
+
+    ```bash
+    npm run tauri:dev
+    ```
+
